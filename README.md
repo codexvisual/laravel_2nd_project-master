@@ -77,3 +77,36 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+---
+
+## Installation
+
+### Prerequisites
+- PHP 8.1 or later
+- [Composer](https://getcomposer.org/)
+- MySQL or PostgreSQL
+
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/codexvisual/laravel_2nd_project-master.git
+   cd laravel_2nd_project-master
+   ```
+2. Install PHP dependencies:
+   ```bash
+   composer install
+   ```
+3. Set up the environment file:
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+4. Configure your database in `.env`, then run migrations:
+   ```bash
+   php artisan migrate --seed
+   ```
+5. Start the development server:
+   ```bash
+   php artisan serve
+   ```
